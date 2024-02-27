@@ -1,0 +1,30 @@
+version: "3.7"
+services:
+  translate-service:
+    image: translate:latest
+    container_name: translate
+    ports:
+      - 5007:5007
+    networks:
+      - nw-lab001
+  identify-service:
+    image: identify:latest
+    container_name: identify
+    ports:
+      - 5005:5005
+    networks:
+      - nw-lab001
+  app-service:
+    image: app:latest
+    container_name: app
+    ports:
+      - 5001:5001
+    networks:
+      - nw-lab001
+  client-service:
+    image: client:latest
+    container_name: client
+    networks:
+      - nw-lab001
+networks:
+  nw-lab001:

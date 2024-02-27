@@ -1,0 +1,15 @@
+# translator app dependencies
+flask
+ibm-watson >= 4.2.1
+requests
+wikipedia
+
+# opentelemetry dependencies
+#safrs
+#rust
+opentelemetry-api 
+opentelemetry-sdk 
+opentelemetry-exporter-otlp-proto-http 
+opentelemetry-instrumentation-flask
+opentelemetry-instrumentation-requests
+

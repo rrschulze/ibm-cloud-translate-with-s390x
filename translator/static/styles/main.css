@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1);
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    font-family: Arial;
+    background: url("./IBM_System360_Mainframe.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 15px;
+}
+
+h1 { 
+    font-size: 36px; 
+    font-family: 'Courier New', Courier, monospace;
+    color: white; 
+}
+
+* {
+     box-sizing: border-box;
+}
+
+form.translator_input input[type=text] {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid grey;
+    float: left;
+    width: 600px;
+    background: white;
+}
+
+form.translator_input select {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid grey;
+    float: left;
+    width: 120px;
+    background: white;
+}        
+
+form.translator_input button {
+    float: left;
+    width: 100px;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 18px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.translator_input button:hover {
+    background: #0b7dda;
+}
+
+form.translator_input::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid grey;
+    float: left;
+    width: 600px;
+    background: white;
+
+}
+
+.regular_text{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid grey;
+    float: left;
+    width: 600px;
+    background: white;
+
+}

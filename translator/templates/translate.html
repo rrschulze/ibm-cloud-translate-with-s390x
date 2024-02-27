@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>translate with s390x and ibmcloud</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/main.css') }}">
+</head>
+<header> <h1>translate with s390x and ibmcloud</h1> </header>
+<body>
+    <section>
+        <form class="translator_input" action="/translate" method="post" style="margin:auto">
+            <input type="text" placeholder="Text.." name="input">
+            
+            <button type="submit">Translate</button>
+        </form>
+    </section>
+
+    <section>
+    <div class="regular_text">
+
+            {% for msg in messages %}
+            {{msg}} <br>
+            {% endfor %}
+     </div>
+    </section>
+    <section></section>
+    <section></section>
+    <section></section>
+</body>
+</html>
